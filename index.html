@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;900&family=Lato:ital,wght@0,300;0,700;1,100&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="pages">
+
+        <!-- Main Content -->
+        <section class="container">
+            <nav class="navbar">
+                <div class="navbar-content">
+                    <img src="https://i.ibb.co/MMmDPXN/lego.png" alt="logo">
+                    <ul>
+                        <li><a href="#">EXCLUSIVO</a></li>
+                        <li><a href="#">NUEVOS</a></li>
+                        <li><a href="#">GIFT CARDS</a></li>
+                        <li><a href="#"> FING A STORE</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="main-content">
+                <p>Diseña tu </p>
+                <h1>Super Héroe !</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Dolorum, tempora enim. Minus unde reprehenderit a temporibus
+                   at doloribus ut recusandae beatae eum repudiandae? Ut inventore
+                   facilis deserunt voluptas? Non, vitae?
+                </p>
+            </section>
+
+
+            <section class="side-content">
+                <p>Superman</p>
+                <div> </div>
+                <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman">
+                
+            </section>
+
+            <section class="footer">
+                <div id="button1">
+                    <img src="https://i.ibb.co/tKWqw8J/spiderman.png" alt="spiderman">
+                </div>
+
+                <div id="button2">
+                    <img src="https://i.ibb.co/Xzsdvgg/robin.png" alt="robin">
+                </div>
+
+                <div id="button3">
+                    <img src="https://i.ibb.co/M18p91c/batman.webp" alt="batman">
+                </div>
+            </section>
+
+        </section>
+
+
+         <!-- loader  -->
+        <section class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+         <!-- Modal -->
+        <section class="modal hadding ">
+            <div class="modal-contanier">
+                    <img class="cerrar" src="https://cdn-icons-png.flaticon.com/512/2938/2938565.png" alt="cerrar">
+                 <div class="slader">
+                     <input type="radio" name="slader-1" id="radio-1" checked>
+                     <input type="radio" name="slader-1" id="radio-2" >
+                     <input type="radio" name="slader-1" id="radio-3" >
+
+                        <div class="cards">
+                         <label for="radio-1" id="card-1" class="card">
+                             <img src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="">
+                         </label>
+
+                         <label for="radio-2" id="card-2" class="card">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="">
+                         </label>
+
+                         <label for="radio-3" id="card-3" class="card">
+                            <img src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="">
+                         </label>                
+                        </div>
+                   </div>
+                <button class="button-red">Lo quiero</button>
+            </div>
+        </section>
+    </div>
+    
+</body>
+
+<script>
+    const modal = document.querySelector('.modal')
+    const button1 = document.querySelector('#button1')
+    const button2 = document.querySelector('#button2')
+    const button3 = document.querySelector('#button3')
+    const close = document.querySelector('.cerrar')
+
+    button1.addEventListener('click', () => {
+        modal.classList.remove('hadding')
+        modal.classList.add('visible')
+    })
+
+    button2.addEventListener('click', () => {
+        modal.classList.remove('hadding')
+        modal.classList.add('visible')
+    })
+    
+    button3.addEventListener('click', () => {
+        modal.classList.remove('hadding')
+        modal.classList.add('visible')
+    })
+    
+    
+    close.addEventListener('click', () => {
+        console.log('here')
+        modal.classList.add('hadding')
+        modal.classList.remove('visible')
+    })
+ 
+</script>
+</html>
